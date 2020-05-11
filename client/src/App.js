@@ -4,6 +4,7 @@ import {ApolloProvider} from 'react-apollo';
 
 // components
 import BookList from './components/BookList';
+import AddBook from './components/AddBook';
 
 const httpLink = new HttpLink({uri: 'http://localhost:4000/graphql'})
 
@@ -21,6 +22,7 @@ class App extends Component {
         <div id="main">
           <h1>Reading List</h1>
           <BookList/>
+          <AddBook/>
         </div>
       </ApolloProvider>
     )
